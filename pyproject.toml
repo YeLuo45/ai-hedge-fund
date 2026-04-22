@@ -10,6 +10,15 @@ packages = [
     { include = "app", from = "." }
 ]
 
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "explicit"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 langchain = "^0.3.7"
